@@ -23,6 +23,7 @@
               "./node_modules/intl-tel-input/build/css/intlTelInput.css",
               "src/styles.css"
             ],
+            "allowedCommonJsDependencies": ["google-libphonenumber"],
             "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,
@@ -160,39 +161,9 @@
           }
         }
       }
-    },
-    "ngx-intl-tel": {
-      "projectType": "library",
-      "root": "projects/ngx-intl-tel",
-      "sourceRoot": "projects/ngx-intl-tel/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/ngx-intl-tel/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/ngx-intl-tel/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/ngx-intl-tel/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "tsConfig": "projects/ngx-intl-tel/tsconfig.spec.json",
-            "polyfills": ["zone.js", "zone.js/testing"]
-          }
-        }
-      }
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "9aae4a3e-3a4c-4d60-8ca3-443beb9d0d8c"
   }
 }
